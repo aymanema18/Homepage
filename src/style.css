@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'inter';
+    src: url(./fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'inter', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-abt-me-sec {
+    display: flex;
+    align-items: center;
+}
+
+.abt-me-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.abt-me-sec-icon {
+    width: 30px;
+}
+
+.main-img {
+    width: 400px;
+}
