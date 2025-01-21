@@ -11,28 +11,135 @@ body {
     font-family: 'inter', Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    /* height: 100vh;
+    background-image: url(images/d.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+/* .bg {
+    position: absolute;
+    height: 419px;
+    width: 100%;
+    background-color: #0891b2;
+    transform: skewY(-0.2rad) scaleY(1.3) translateY(-100px);
+    z-index: -1;
+} */
+
+p {
+    margin-top: 0;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: stretch;
+    padding: 100px 0;
 }
 
 .img-abt-me-sec {
     display: flex;
     align-items: center;
+    align-self: center;
 }
+/* 
+.img-abt-me-sec,
+.my-work-cards {
+    width: 90%;
+} */
 
 .abt-me-sec {
     display: flex;
     flex-direction: column;
+    max-width: 500px;
+    padding: 15px;
+    background-color: white;
 }
 
-.abt-me-sec-icon {
+.abt-me-sec > a {
+    align-self: flex-end;
+}
+
+.abt-me-sec > p {
+    font-size: small;
+}
+
+.abt-me-sec-icon,
+.art-icon {
     width: 30px;
 }
 
 .main-img {
-    width: 400px;
+    max-width: 400px;
+}
+
+.my-work-cards {
+    width: 75%;
+    align-self: center;
+    padding-top: 60px;
+}
+
+.cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    justify-self: center;
+    padding-bottom: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+}
+
+header {
+    padding: 10px;
+}
+
+.art-p {
+    padding: 0 10px;
+    font-size: small;
+}
+
+article > div {
+    background-color: brown;
+    height: 200px;
+}
+
+footer {
+    background-color: #0891b2;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+address > a > img {
+    width: 30px;
+}
+
+/* .address-heading-p {
+    flex: 1;
+}
+*/
+.ft-img {
+    max-width: 450px;
+}
+
+.main-img,
+.abt-me-sec,
+article,
+.bg {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
